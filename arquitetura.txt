@@ -1,0 +1,45 @@
+MODELO ARQUITETURA ATUAL
+
+trabalho-pratico/
+├── include/                       
+│   ├── apresentacao/              
+│   │   ├── principal.h            
+│   │   └── testes.h               
+│   ├── dados/                     
+│   │   ├── datasetMusicas.h       # Funções para carregar e manipular dados de músicas
+│   │   ├── datasetUsuarios.h      # Funções para carregar e manipular dados de usuários
+│   │   └── datasetArtistas.h      # Funções para carregar e manipular dados de artistas
+│   ├── infra/                     
+│   │   ├── entidades.h            # Estruturas de dados para músicas, usuários e artistas
+│   │   └── utils.h                # Funções auxiliares (validação, manipulação de strings, etc.)
+│   ├── logica/                    
+│   │   ├── Query1.h               # Definições para QueryArg, QueryResult e ExecutaQ1
+│   │   ├── Query2.h               # Definições para QueryArg, QueryResult e ExecutaQ2
+│   │   └── Query3.h               # Definições para QueryArg, QueryResult e ExecutaQ3
+├── resultados/
+|   ├── artistas_erros.csv
+|   ├── musicas_erros.csv
+|   ├── users_erros.csv
+├── resultados-esperados/
+|   ├──
+├── src/
+│   ├── apresentacao/              
+│   │   ├── principal.c            
+│   │   └── testes.c                          
+│   ├── dados/                     
+│   │   ├── datasetMusicas.c       # Implementação do dataset de músicas
+│   │   ├── datasetUsuarios.c      # Implementação do dataset de usuários
+│   │   └── datasetArtistas.c      # Implementação do dataset de artistas
+│   ├── infra/                     
+│   │   ├── entidades.c            
+│   │   └── utils.c       
+│   ├── logica/        
+|   |	|——— Validação 
+|   |	|	|—— validacaoMusicas.c
+|   |	|	|—— validacaoUsuarios.c
+|   |	|	|____validacaoArtistas.c
+|   |	|——— Queries      
+│   │   	├── Query1.c               
+│   │   	├── Query2.c               
+│   │  		|── Query3.c            
+└── Makefile
